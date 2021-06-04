@@ -1,12 +1,25 @@
 
 
 
+/* //URLify
+URLify("Mr John Smith");
 
+function URLify(text){
+    let str = "";
+    for(let x in text){
+        if(text.charAt(x) == " "){
+            str += "%20";
+        } else {
+            str += text.charAt(x);
+        }
+    }
+    console.log(str);
+}
+*/
 
 /*
 // Reverse string
-const result = reverseString("hello");
-console.log(result);
+reverseString("hello");
 
 function reverseString(text){
     let reverse = "";
@@ -16,5 +29,5 @@ function reverseString(text){
     for(x in text){
         reverse += text.charAt((length-x)-1);
     }
-    return reverse;
-} */
+    console.log(reverse);
+} */ 
